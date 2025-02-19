@@ -1,16 +1,30 @@
+
 import turtle
+turtle.Screen().bgcolor("Aqua")
+board=turtle.Turtle()
+# first triangle for star
+board.forward(100)#draw base
 
-# Create a new turtle screen and set its background color
-screen = turtle.Screen()
-screen.bgcolor("Aqua")
+board.left(120)
+board.forward(100)
 
-# Create a new turtle object
-star = turtle.Turtle()
 
-# Draw a star
-for i in range(5):
-    star.forward(100)
-    star.right(144)
+board.left(120)
+board.forward(100)
 
-# Keep the window open
+board.penup()
+board.right(150)
+board.forward(50)
+
+#second triangle for star
+board.pendown()
+board.right(90)
+board.forward(100)
+
+board.right(120)
+board.forward(100)
+
+board.right(120)
+board.forward(100)
+
 turtle.done()
